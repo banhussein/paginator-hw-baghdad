@@ -10,6 +10,7 @@ class Paginator {
         for (let i = 0; i < this._data.length - 1; i += this._itemsperpage) {
             this.dataarr.push(this._data.slice(i, i + this._itemsperpage))
         }
+        this.currentpage=0;
 
     }
     page(number){
@@ -20,15 +21,16 @@ class Paginator {
     }
     firstPage(){return this.dataarr[0]
  }
-nextpage(){ return this.currentpage++}
+nextpage(){ return this.currentpage++
+}
 previouspage(){ 
     return this.currentpage--
 }
 pages(){
-    return this.dataarr=[this.dataarr.length]
+    return this.dataarr.length
 }
 currentpage(){
-    this.dataarr=[this.currentpage]
+    this.dataarr[this.currentpage]
 }
 get itemsperpage(){
     return this._itemsperpage
