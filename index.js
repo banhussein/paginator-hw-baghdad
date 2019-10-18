@@ -13,7 +13,7 @@ class Paginator {
         return this.dataarr[number]
     }
     lastPage(){
-        return  dataarr[this.dataarr.length-1]
+        return  this.dataarr[this.dataarr.length-1]
     }
     firstPage(){
         return this.dataarr[0]
