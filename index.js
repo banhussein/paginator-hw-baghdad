@@ -7,18 +7,19 @@ class Paginator {
         for (let i = 0; i < this._data.length - 1; i += this._itemsperpage) {
             this.dataarr.push(this._data.slice(i, i + this._itemsperpage))
         }
-        this.currentpage=0;
 
     }
     page(number){
         return this.dataarr[number]
     }
     lastPage(){
-        return  this.dataarr.length-1
+        return  dataarr[this.dataarr.length-1]
     }
-    firstPage(){return this.dataarr[0]
+    firstPage(){
+        return this.dataarr[0]
  }
-nextpage(){ return ++this.currentpage
+nextpage(){
+     return ++this.currentpage
 }
 previouspage(){ 
     return --this.currentpage
