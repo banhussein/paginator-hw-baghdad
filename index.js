@@ -8,7 +8,7 @@ class Paginator {
         this.dataarr=[];
         this.currentpage=0;
         for (let i = 0; i < this._data.length - 1; i += this._itemsperpage) {
-            this.page.push(this._data.slice(i, i + this._itemsperpage))
+            this.dataarr.push(this._data.slice(i, i + this._itemsperpage))
         }
 
     }
