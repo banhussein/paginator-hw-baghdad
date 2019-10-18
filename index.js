@@ -1,6 +1,3 @@
-
-
-
 class Paginator {
     constructor(data,itemsperpage){
         this._data=data;
@@ -21,10 +18,10 @@ class Paginator {
     }
     firstPage(){return this.dataarr[0]
  }
-nextpage(){ return this.currentpage++
+nextpage(){ return ++this.currentpage
 }
 previouspage(){ 
-    return this.currentpage--
+    return --this.currentpage
 }
 pages(){
     return this.dataarr.length
